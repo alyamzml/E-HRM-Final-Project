@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuActivity" android:background="#E2D4B7" android:foregroundTint="#E2D4B7">
+
+    <Button
+            android:text="Profile"
+            android:layout_width="190dp"
+            android:layout_height="49dp" android:id="@+id/btnProfile"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="toProfile" app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.184" android:background="#9C9583" android:textSize="22sp"/>
+    <Button
+            android:text="e-Overtime"
+            android:layout_width="195dp"
+            android:layout_height="60dp" android:id="@+id/btnOvertime"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/btnProfile"
+            app:layout_constraintVertical_bias="0.08"
+            android:onClick="toOvertime" android:backgroundTint="#9C9583" app:layout_constraintHorizontal_bias="0.498"
+            android:shadowColor="#9B9482" android:textSize="22sp"/>
+    <Button
+            android:text="e-Leave"
+            android:layout_width="195dp"
+            android:layout_height="60dp" android:id="@+id/btnLeave"
+            app:layout_constraintTop_toBottomOf="@+id/btnOvertime"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:onClick="toLeave"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.092"
+            android:backgroundTint="#9C9583" android:textSize="22sp"/>
+    <Button
+            android:text="e-Attendance"
+            android:layout_width="195dp"
+            android:layout_height="60dp" android:id="@+id/btnAttend"
+            app:layout_constraintTop_toBottomOf="@+id/btnLeave"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:onClick="toAttend"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.125"
+            android:backgroundTint="#9C9583" android:textSize="22sp" android:shadowColor="#B39D9D"
+    />
+    <Button
+            android:text="e-Payroll"
+            android:layout_width="195dp"
+            android:layout_height="60dp" android:id="@+id/btnPayroll"
+            android:onClick="toPayroll"
+            app:layout_constraintTop_toBottomOf="@+id/btnAttend" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.176" android:backgroundTint="#9C9583"
+            app:layout_constraintHorizontal_bias="0.498" android:textSize="22sp"/>
+    <Button
+            android:text="Log Out"
+            android:layout_width="195dp"
+            android:layout_height="60dp" android:id="@+id/btnLogout"
+            app:layout_constraintTop_toBottomOf="@+id/btnPayroll"
+            android:layout_marginTop="28dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:onClick="toOut" app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.62" android:backgroundTint="#9C9583" android:textSize="22sp"/>
+    <TextView
+            android:text="MAIN MENU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView10"
+            android:textSize="34sp" android:fontFamily="serif" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.056" android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

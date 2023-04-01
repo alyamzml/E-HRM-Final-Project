@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="myName" type="id"/>
+    <item name="txtCheckInDate" type="id"/>
+    <item name="txtCheckInTime" type="id"/>
+    <item name="txtCheckOutDate" type="id"/>
+    <item name="txtCheckOutTime" type="id"/>
+    <item name="btnCheckIn" type="id"/>
+    <item name="btnCheckOut" type="id"/>
+    <item name="lblStatusCheckIn" type="id"/>
+    <item name="editTextDate2" type="id"/>
+    <item name="textInputEditText" type="id"/>
+</resources>
